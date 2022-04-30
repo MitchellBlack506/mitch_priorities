@@ -1,4 +1,4 @@
-# Mitch Priorities
+# Mitch Priorities | FiveM
 
 A simple FiveM LUA Script to alert police of possible robberies / priorities
 
