@@ -28,7 +28,7 @@ AddEventHandler('mitchPriorities.currentPriority:OnDutyAlert',function(locations
         EndTextCommandSetBlipName(locations.blip)
         PlaySoundFrontend(-1, "Event_Start_Text", "GTAO_FM_Events_Soundset", 0, 0, 1)
         exports['mythic_notify']:DoCustomHudText('inform', 'There has been a priority reported at '..locations.name..".",10000, { ['background-color'] = '#90dbf4', ['color'] = '#001219' })
-        Wait(10000) -- 10 seconds 
+        Wait(1000 * config.cooldown) -- 10 seconds 
         RemoveBlip(locations.blip)    
     end  
 end)

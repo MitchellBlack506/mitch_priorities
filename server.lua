@@ -21,7 +21,7 @@ AddEventHandler('mitchPriorities:startPriority', function(bool,locations)
 	print("Server received startPriority")
 	TriggerClientEvent('mitchPriorities.currentPriority:OnDutyAlert', -1,locations)
 	if bool then
-		Wait((10000))
+		Wait((1000 * config.cooldown))
 		currentPriority = false
 	end
 end)
